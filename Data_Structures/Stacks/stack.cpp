@@ -33,8 +33,6 @@ int Node::getData()const{
 
 //*******************End Node *********************//
 
-
-
 //******************* Class  LIST *********************//
 class List{
 public:
@@ -144,6 +142,7 @@ public:
 };
 //*******************END STACK **************************//
 
+//Execution Begins 
 int main(){
 
     Stack intStack;

@@ -3,12 +3,12 @@
 *Similar to Deitels Linked list on page 815
 *
 *Description: A queue is like a checkout line. The first items to come in are the
-                first to come out. Queue nodes are moved from the head of the queue
-                and are inserted only at the tail of the queue(FIFO).
-                enque: insert operation
-                deque: remove operation
-
-                This function is derived from the class list
+*                first to come out. Queue nodes are moved from the head of the queue
+*                and are inserted only at the tail of the queue(FIFO).
+*                enque: insert operation
+*                deque: remove operation
+*
+*                This function is derived from the class list
 */
 
 #include <iostream>
@@ -178,7 +178,7 @@ public:
 };
 //*******************END QUEUE *********************//
 
-
+//Execution Begins
 int main(){
 
 
