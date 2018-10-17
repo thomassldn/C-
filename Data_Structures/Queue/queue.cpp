@@ -1,7 +1,4 @@
 /*Author: Thomas Saldana
-*Stack
-*Similar to Deitels Linked list on page 815
-*
 *Description: A queue is like a checkout line. The first items to come in are the
 *                first to come out. Queue nodes are moved from the head of the queue
 *                and are inserted only at the tail of the queue(FIFO).
