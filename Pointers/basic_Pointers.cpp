@@ -19,3 +19,11 @@ int main()
 
 
 }
+
+/*Output:
+The address of a is 010FFB00
+The value of aPtr is 010FFB00
+
+The value of a is 10
+The value of *aPtr is 10
+*/
