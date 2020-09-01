@@ -3,7 +3,7 @@
  * Author: Thomas S
  *
  * Created on August 31, 2020, 8:19 PM
- * Desc:
+ * Desc: Binary Search, array has to be sorted first
  *
  */
 
