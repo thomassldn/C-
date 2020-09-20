@@ -5,37 +5,68 @@
 */
 
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
-int main (){
+void bubbleSort( int *, const int);
+void swap(int * const, int * const);
 
+int main(){
 
-  int choice = 1;
+  const int arrSIZE = 10;
 
-  cout << "What is your symptom: ";
-  cout << "\n1) Anxiety\n"
-       << "2) Depression\n"
-       << "3) Headache\n"
-       << "4) Stomach Ache\n";
+  int array[ arrSIZE ] = {9,2,7,3,4,1,5,0,6,8};
 
-  cin >> choice;
+  //before sorting
+  cout << "The original array: \n";
 
-  if ( choice == 2 ){
+  for( int i = 0; i < arrSIZE; i++ ){
 
-    cout << "\nYou need to take Prozac.\n";
+    cout << array[i] << " ";
 
-  } else if ( choice == 3) {
+  }
+  cout << endl;
 
-    cout << "You need to take advil!\n";
+  //sort the array
+  bubbleSort(array, arrSIZE);
 
-  } else if (  choice == 1) {
+  //after sorting
+  cout << "\nAfter sorting: \n";
 
-    cout << "you need to take xanax\n";
+  for( int i = 0; i < arrSIZE; i++ ){
 
-  } else if ( choice == 4)  {
+    cout << array[i] << " ";
 
-    cout << "you need to take pepto\n";
+  }
+  cout << endl;
+  return 0;
+}
+
+void bubbleSort( int * arr, const int SIZE){
+
+  for(int curr = 0; curr < SIZE - 1; curr++){
+
+    for( int j = 0; j < SIZE -1 ; j ++ ){
+
+      if ( arr[j] > arr [j + 1 ]){
+
+        swap(arr[curr], arr[j+1]);
+
+      }
+    }
+
   }
 
-}
+}//END bubbleSort
+
+
+void swap(int * const elementPtr1, int * const elementPtr2){
+
+  int temp;
+
+  temp = *elementPtr1;
+  *elementPtr1 = *elementPtr2;
+  *elementPtr2 = temp;
+
+}//END Swap
