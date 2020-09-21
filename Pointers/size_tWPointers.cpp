@@ -35,5 +35,5 @@ OUTPUT:
 MAC$ ./a.out
 The number of bytes in the array is: 160
 The number of bytes help by a pointer: 8
-
+The array has 20 elements.
 */
