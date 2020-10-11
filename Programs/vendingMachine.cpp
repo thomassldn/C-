@@ -125,7 +125,6 @@ void initializeDrinks(VendingMachine drinks[]){
         displayDrinks(drinks[i]);
         
         }
-          
         
             //ask user for drink choice
             
@@ -136,11 +135,7 @@ void initializeDrinks(VendingMachine drinks[]){
             //Ask user to enter dollar ammount
             amnt = 0.0;    
             cout << "\nEnter dollar ammount: $";
-            cin >> amnt;
-      
-            
-            
-            
+            cin >> amnt;    
             
             if( drink == "Cola" ) choice = 1; 
             if( drink == "Root Beer" ) choice = 2; 
@@ -173,8 +168,7 @@ void initializeDrinks(VendingMachine drinks[]){
                     break;
                 
                 default: 
-                    cout << "Drink not found!\n";
-                    
+                    cout << "Drink not found!\n";                 
                     
             }//END switch 
 
@@ -193,9 +187,7 @@ void initializeDrinks(VendingMachine drinks[]){
         cin.ignore();
             
     }//END WHILE
-    
-    
-    
+      
 }
 void displayDrinks(VendingMachine drink){
         
